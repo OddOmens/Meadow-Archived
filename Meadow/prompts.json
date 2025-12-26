@@ -1,0 +1,59 @@
+{
+  "prompts": [
+    {
+      "category": "Birth / Parenting",
+      "question": "I'm about to become a parent. What if I mess it up?",
+      "answer": "It's natural to feel unsure. The fact that you care this much already says a lot. Nobody's perfect, but love and effort go a long way. Would you like to talk about what specific aspects of parenting worry you the most?",
+      "followUp": [
+        "What aspects of parenting feel most daunting to you?",
+        "Have you shared these feelings with other parents or soon-to-be parents?",
+        "What kind of parent do you hope to be?"
+      ],
+      "tags": ["parenting", "anxiety", "future", "responsibility"]
+    },
+    {
+      "category": "Birth / Parenting",
+      "question": "Why do people have kids if the world is so hard?",
+      "answer": "Sometimes people see hope in new life, a chance to nurture something good. It's okay to question it — your feelings are valid. What specific concerns about the world are weighing on your mind?",
+      "followUp": [
+        "How do you envision making a difference in the world?",
+        "What gives you hope, despite the challenges?",
+        "Have you always felt this way about having children?"
+      ],
+      "tags": ["existential", "parenting", "future", "hope"]
+    },
+    {
+      "category": "Death / Loss",
+      "question": "Why do we have to die?",
+      "answer": "Death is one of life's biggest mysteries. It reminds us how precious time is. What you do with your moments is what gives them meaning. Would you like to share what brought this question up for you?",
+      "followUp": [
+        "Has something specific made you think about mortality lately?",
+        "How do these thoughts about death affect how you live?",
+        "What would you like to make meaningful in your life?"
+      ],
+      "tags": ["existential", "death", "meaning", "philosophy"]
+    },
+    {
+      "category": "Death / Loss",
+      "question": "I miss someone I lost. Will it ever stop hurting?",
+      "answer": "The pain may soften, but love has a way of lingering. That ache is also a sign of how deeply you cared. Would you like to tell me about them?",
+      "followUp": [
+        "What do you miss most about them?",
+        "How do you honor their memory?",
+        "What would they be proud to see in you today?"
+      ],
+      "tags": ["grief", "loss", "emotions", "healing"]
+    },
+    {
+      "category": "Relationships & Friendship",
+      "question": "Why do people drift apart?",
+      "answer": "Life changes us — sometimes together, sometimes in different directions. It's painful, but it doesn't mean the bond was meaningless. Is there a specific relationship you're thinking about?",
+      "followUp": [
+        "How has this change in relationship affected you?",
+        "What do you value most about friendship?",
+        "Have you considered reaching out to reconnect?"
+      ],
+      "tags": ["relationships", "change", "growth", "loss"]
+    }
+  ]
+} 

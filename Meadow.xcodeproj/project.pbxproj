@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0A814E2B7DA8AC00B82D7C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A814D2B7DA8AC00B82D7C /* SettingsView.swift */; };
+		9C0A81542B7DA8D600B82D7C /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A81532B7DA8D600B82D7C /* VersionView.swift */; };
+		9C0A81572B7DAAFF00B82D7C /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A81562B7DAAFF00B82D7C /* ThemeManager.swift */; };
+		9C0A81592B7DAB1A00B82D7C /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0A81582B7DAB1A00B82D7C /* Classes.swift */; };
+		9C0CC4992B96A79600068A09 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CC4982B96A79600068A09 /* Functions.swift */; };
+		9C0CC4A02B980AF700068A09 /* Thought+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CC49E2B980AF700068A09 /* Thought+CoreDataClass.swift */; };
+		9C0CC4A12B980AF700068A09 /* Thought+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0CC49F2B980AF700068A09 /* Thought+CoreDataProperties.swift */; };
+		9C0F68D02BCE178F000584FD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9C0F68CF2BCE178F000584FD /* PrivacyInfo.xcprivacy */; };
+		9C2EF03D2B6FDB6D00FB35DB /* MeadowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF03C2B6FDB6D00FB35DB /* MeadowApp.swift */; };
+		9C2EF0412B6FDB6E00FB35DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EF0402B6FDB6E00FB35DB /* Assets.xcassets */; };
+		9C2EF0442B6FDB6E00FB35DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2EF0432B6FDB6E00FB35DB /* Preview Assets.xcassets */; };
+		9C2EF0462B6FDB6E00FB35DB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0452B6FDB6E00FB35DB /* Persistence.swift */; };
+		9C2EF0492B6FDB6E00FB35DB /* Meadow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0472B6FDB6E00FB35DB /* Meadow.xcdatamodeld */; };
+		9C2EF05B2B70416700FB35DB /* Session+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0572B70416700FB35DB /* Session+CoreDataClass.swift */; };
+		9C2EF05C2B70416700FB35DB /* Session+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0582B70416700FB35DB /* Session+CoreDataProperties.swift */; };
+		9C2EF05D2B70416700FB35DB /* Client+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0592B70416700FB35DB /* Client+CoreDataClass.swift */; };
+		9C2EF05E2B70416700FB35DB /* Client+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF05A2B70416700FB35DB /* Client+CoreDataProperties.swift */; };
+		9C2EF0632B751C9500FB35DB /* Disorder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0612B751C9500FB35DB /* Disorder+CoreDataClass.swift */; };
+		9C2EF0642B751C9500FB35DB /* Disorder+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2EF0622B751C9500FB35DB /* Disorder+CoreDataProperties.swift */; };
+		9C680B602C19ECFD00A84574 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C680B5F2C19ECFD00A84574 /* UserDefaults.swift */; };
+		9C680B622C1A042400A84574 /* IconCustomizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C680B612C1A042400A84574 /* IconCustomizeView.swift */; };
+		9C8B993F2B85527C001F8A30 /* Treatment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B993D2B85527C001F8A30 /* Treatment+CoreDataClass.swift */; };
+		9C8B99402B85527C001F8A30 /* Treatment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B993E2B85527C001F8A30 /* Treatment+CoreDataProperties.swift */; };
+		9C909A492DC6948A0019AA69 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C909A482DC6948A0019AA69 /* HomeView.swift */; };
+		9C909A592DCA8F3C0019AA69 /* Provider+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C909A572DCA8F3C0019AA69 /* Provider+CoreDataClass.swift */; };
+		9C909A5A2DCA8F3C0019AA69 /* Provider+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C909A582DCA8F3C0019AA69 /* Provider+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C0A814D2B7DA8AC00B82D7C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9C0A81532B7DA8D600B82D7C /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
+		9C0A81562B7DAAFF00B82D7C /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		9C0A81582B7DAB1A00B82D7C /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		9C0CC4982B96A79600068A09 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		9C0CC49E2B980AF700068A09 /* Thought+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thought+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C0CC49F2B980AF700068A09 /* Thought+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thought+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C0F68CF2BCE178F000584FD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		9C2EF0392B6FDB6D00FB35DB /* Meadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meadow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C2EF03C2B6FDB6D00FB35DB /* MeadowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeadowApp.swift; sourceTree = "<group>"; };
+		9C2EF0402B6FDB6E00FB35DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C2EF0432B6FDB6E00FB35DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9C2EF0452B6FDB6E00FB35DB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9C2EF0482B6FDB6E00FB35DB /* Meadow.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Meadow.xcdatamodel; sourceTree = "<group>"; };
+		9C2EF04A2B6FDB6E00FB35DB /* Meadow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Meadow.entitlements; sourceTree = "<group>"; };
+		9C2EF04B2B6FDB6E00FB35DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C2EF0572B70416700FB35DB /* Session+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C2EF0582B70416700FB35DB /* Session+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C2EF0592B70416700FB35DB /* Client+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C2EF05A2B70416700FB35DB /* Client+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Client+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C2EF0612B751C9500FB35DB /* Disorder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disorder+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C2EF0622B751C9500FB35DB /* Disorder+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disorder+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C680B5F2C19ECFD00A84574 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		9C680B612C1A042400A84574 /* IconCustomizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconCustomizeView.swift; sourceTree = "<group>"; };
+		9C8B993D2B85527C001F8A30 /* Treatment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Treatment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C8B993E2B85527C001F8A30 /* Treatment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Treatment+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C909A482DC6948A0019AA69 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9C909A542DC990CD0019AA69 /* Meadow 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Meadow 2.xcdatamodel"; sourceTree = "<group>"; };
+		9C909A572DCA8F3C0019AA69 /* Provider+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Provider+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C909A582DCA8F3C0019AA69 /* Provider+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Provider+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C2EF0362B6FDB6D00FB35DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C0A814C2B7DA89D00B82D7C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A814D2B7DA8AC00B82D7C /* SettingsView.swift */,
+				9C0A81532B7DA8D600B82D7C /* VersionView.swift */,
+				9C680B612C1A042400A84574 /* IconCustomizeView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9C0A81552B7DAAED00B82D7C /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A81562B7DAAFF00B82D7C /* ThemeManager.swift */,
+				9C0A81582B7DAB1A00B82D7C /* Classes.swift */,
+				9C0CC4982B96A79600068A09 /* Functions.swift */,
+				9C680B5F2C19ECFD00A84574 /* UserDefaults.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		9C2EF0302B6FDB6D00FB35DB = {
+			isa = PBXGroup;
+			children = (
+				9C2EF03B2B6FDB6D00FB35DB /* Meadow */,
+				9C2EF03A2B6FDB6D00FB35DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C2EF03A2B6FDB6D00FB35DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EF0392B6FDB6D00FB35DB /* Meadow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C2EF03B2B6FDB6D00FB35DB /* Meadow */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EF03C2B6FDB6D00FB35DB /* MeadowApp.swift */,
+				9C909A482DC6948A0019AA69 /* HomeView.swift */,
+				9C0A814C2B7DA89D00B82D7C /* Settings */,
+				9C0A81552B7DAAED00B82D7C /* Functions */,
+				9C2EF0562B70415100FB35DB /* CoreData */,
+				9C2EF0452B6FDB6E00FB35DB /* Persistence.swift */,
+				9C2EF04B2B6FDB6E00FB35DB /* Info.plist */,
+				9C2EF04A2B6FDB6E00FB35DB /* Meadow.entitlements */,
+				9C2EF0402B6FDB6E00FB35DB /* Assets.xcassets */,
+				9C2EF0472B6FDB6E00FB35DB /* Meadow.xcdatamodeld */,
+				9C2EF0422B6FDB6E00FB35DB /* Preview Content */,
+				9C0F68CF2BCE178F000584FD /* PrivacyInfo.xcprivacy */,
+			);
+			path = Meadow;
+			sourceTree = "<group>";
+		};
+		9C2EF0422B6FDB6E00FB35DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9C2EF0432B6FDB6E00FB35DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9C2EF0562B70415100FB35DB /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9C909A572DCA8F3C0019AA69 /* Provider+CoreDataClass.swift */,
+				9C909A582DCA8F3C0019AA69 /* Provider+CoreDataProperties.swift */,
+				9C0CC49E2B980AF700068A09 /* Thought+CoreDataClass.swift */,
+				9C0CC49F2B980AF700068A09 /* Thought+CoreDataProperties.swift */,
+				9C8B993D2B85527C001F8A30 /* Treatment+CoreDataClass.swift */,
+				9C8B993E2B85527C001F8A30 /* Treatment+CoreDataProperties.swift */,
+				9C2EF0612B751C9500FB35DB /* Disorder+CoreDataClass.swift */,
+				9C2EF0622B751C9500FB35DB /* Disorder+CoreDataProperties.swift */,
+				9C2EF0572B70416700FB35DB /* Session+CoreDataClass.swift */,
+				9C2EF0582B70416700FB35DB /* Session+CoreDataProperties.swift */,
+				9C2EF0592B70416700FB35DB /* Client+CoreDataClass.swift */,
+				9C2EF05A2B70416700FB35DB /* Client+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C2EF0382B6FDB6D00FB35DB /* Meadow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C2EF04E2B6FDB6E00FB35DB /* Build configuration list for PBXNativeTarget "Meadow" */;
+			buildPhases = (
+				9C2EF0352B6FDB6D00FB35DB /* Sources */,
+				9C2EF0362B6FDB6D00FB35DB /* Frameworks */,
+				9C2EF0372B6FDB6D00FB35DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meadow;
+			productName = Meadow;
+			productReference = 9C2EF0392B6FDB6D00FB35DB /* Meadow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C2EF0312B6FDB6D00FB35DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9C2EF0382B6FDB6D00FB35DB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 9C2EF0342B6FDB6D00FB35DB /* Build configuration list for PBXProject "Meadow" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C2EF0302B6FDB6D00FB35DB;
+			productRefGroup = 9C2EF03A2B6FDB6D00FB35DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C2EF0382B6FDB6D00FB35DB /* Meadow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C2EF0372B6FDB6D00FB35DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0F68D02BCE178F000584FD /* PrivacyInfo.xcprivacy in Resources */,
+				9C2EF0442B6FDB6E00FB35DB /* Preview Assets.xcassets in Resources */,
+				9C2EF0412B6FDB6E00FB35DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C2EF0352B6FDB6D00FB35DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C8B99402B85527C001F8A30 /* Treatment+CoreDataProperties.swift in Sources */,
+				9C2EF05D2B70416700FB35DB /* Client+CoreDataClass.swift in Sources */,
+				9C2EF0492B6FDB6E00FB35DB /* Meadow.xcdatamodeld in Sources */,
+				9C0A81572B7DAAFF00B82D7C /* ThemeManager.swift in Sources */,
+				9C909A592DCA8F3C0019AA69 /* Provider+CoreDataClass.swift in Sources */,
+				9C909A5A2DCA8F3C0019AA69 /* Provider+CoreDataProperties.swift in Sources */,
+				9C2EF05E2B70416700FB35DB /* Client+CoreDataProperties.swift in Sources */,
+				9C2EF0632B751C9500FB35DB /* Disorder+CoreDataClass.swift in Sources */,
+				9C2EF05B2B70416700FB35DB /* Session+CoreDataClass.swift in Sources */,
+				9C0A81592B7DAB1A00B82D7C /* Classes.swift in Sources */,
+				9C0CC4A02B980AF700068A09 /* Thought+CoreDataClass.swift in Sources */,
+				9C0CC4A12B980AF700068A09 /* Thought+CoreDataProperties.swift in Sources */,
+				9C8B993F2B85527C001F8A30 /* Treatment+CoreDataClass.swift in Sources */,
+				9C680B602C19ECFD00A84574 /* UserDefaults.swift in Sources */,
+				9C2EF0462B6FDB6E00FB35DB /* Persistence.swift in Sources */,
+				9C2EF03D2B6FDB6D00FB35DB /* MeadowApp.swift in Sources */,
+				9C680B622C1A042400A84574 /* IconCustomizeView.swift in Sources */,
+				9C909A492DC6948A0019AA69 /* HomeView.swift in Sources */,
+				9C2EF05C2B70416700FB35DB /* Session+CoreDataProperties.swift in Sources */,
+				9C0CC4992B96A79600068A09 /* Functions.swift in Sources */,
+				9C2EF0642B751C9500FB35DB /* Disorder+CoreDataProperties.swift in Sources */,
+				9C0A814E2B7DA8AC00B82D7C /* SettingsView.swift in Sources */,
+				9C0A81542B7DA8D600B82D7C /* VersionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9C2EF04C2B6FDB6E00FB35DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C2EF04D2B6FDB6E00FB35DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C2EF04F2B6FDB6E00FB35DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIconWinter AppIconCharcoal AppIconSeaweed AppIconMorning AppIconNord AppIconBlueberry AppIconCherryBlossom AppIconMidnight AppIconMint";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Meadow/Meadow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2025.12.2;
+				DEVELOPMENT_ASSET_PATHS = "\"Meadow/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meadow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Meadow Debug";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2025.12.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meadow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9C2EF0502B6FDB6E00FB35DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIconWinter AppIconCharcoal AppIconSeaweed AppIconMorning AppIconNord AppIconBlueberry AppIconCherryBlossom AppIconMidnight AppIconMint";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Meadow/Meadow.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2025.12.1;
+				DEVELOPMENT_ASSET_PATHS = "\"Meadow/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meadow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Meadow;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2025.12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.meadow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C2EF0342B6FDB6D00FB35DB /* Build configuration list for PBXProject "Meadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C2EF04C2B6FDB6E00FB35DB /* Debug */,
+				9C2EF04D2B6FDB6E00FB35DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C2EF04E2B6FDB6E00FB35DB /* Build configuration list for PBXNativeTarget "Meadow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C2EF04F2B6FDB6E00FB35DB /* Debug */,
+				9C2EF0502B6FDB6E00FB35DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9C2EF0472B6FDB6E00FB35DB /* Meadow.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9C909A542DC990CD0019AA69 /* Meadow 2.xcdatamodel */,
+				9C2EF0482B6FDB6E00FB35DB /* Meadow.xcdatamodel */,
+			);
+			currentVersion = 9C909A542DC990CD0019AA69 /* Meadow 2.xcdatamodel */;
+			path = Meadow.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9C2EF0312B6FDB6D00FB35DB /* Project object */;
+}
